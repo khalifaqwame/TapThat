@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" style="@style/StartScreenImage" android:focusable="false"
+    android:background="@color/accent_material_light"
+    >
+
+    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play"
+                android:id="@+id/textView"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="40dp"
+            android:layout_alignBottom="@+id/go_button"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+            android:id="@+id/go_button"
+            android:contentDescription="@string/go_description"
+            android:src="@drawable/play" android:layout_width="117dp"
+            android:layout_height="117dp"
+            android:layout_gravity="center_horizontal|top"
+        android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+        android:background="@android:color/holo_green_light"
+        android:layout_marginTop="100dp" />
+
+    <ImageView
+                android:layout_width="117dp"
+                android:layout_height="117dp"
+                android:id="@+id/howtoBtn"
+                android:src="@drawable/howtoplay"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@android:color/holo_blue_light"
+                android:layout_below="@+id/go_button" android:layout_alignLeft="@+id/go_button"
+                android:layout_alignStart="@+id/go_button"
+        android:layout_marginBottom="100dp" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="How to play"
+                  android:id="@+id/textView3" android:gravity="center"
+                  android:textSize="40dp"
+                  android:textColor="#ffffffff"
+                  android:layout_alignTop="@+id/howtoBtn" android:layout_toRightOf="@+id/howtoBtn"
+        android:layout_gravity="center" />
+
+
+</FrameLayout>

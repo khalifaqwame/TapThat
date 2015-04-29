@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TapThat</string>
+    <string name="level_1_button">Let\'s Go!</string>
+    <string name="next">Continue</string>
+    <string name="start_button">Go!</string>
+    <string name="title">tapThat Challenge</string>
+    <string name="go">Go!</string>
+    <string name="title_image">title</string>
+    <string name="background_image">Background Image</string>
+    <string name="unpause">Keep Going!!</string>
+    <string name="paused">Paused!</string>
+
+    <!-- Image Descriptions -->
+    <string name="go_description">Go Button</string>
+    <string name="placeholder_description">Placeholder for the game\'s background</string>
+    <string name="game_description">Main game board</string>
+    <string name="tapThat_description">tapThat</string>
+    <string name="clock_description">Clock</string>
+    <string name="title_image_description">Title Image</string>
+    <string name="balloon_description">Balloon</string>
+    <string name="congratulations_description">Congratulations you won!</string>
+    <string name="pause_description">Pause Button</string>
+
+<!--7x7-->
+    <string name="intro_title">Tap That</string>
+    <string name="intro_text">The goal is to beat the tap challenge by touching as many balls as possible within the specified time.</string>
+    <string name="tutorial_title">How To Play</string>
+    <string name="tutorial_text">To complete each level, simply touch on the balls as they appear on the screen as fast as you can to get the set level target. </string>
+
+</resources>
