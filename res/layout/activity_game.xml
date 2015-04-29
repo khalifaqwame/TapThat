@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="game.entities.GameActivity" >
+
+    <RelativeLayout android:id='@+id/game_header' style="@style/GameHeader">
+        <ImageView
+            android:id="@+id/game_clock_image"
+            android:contentDescription="@string/clock_description"
+            style="@style/GameClockImage" />
+        <TextView
+            android:id="@+id/game_time"
+            style="@style/GameTime" />
+        <ImageView
+            android:id="@+id/game_pause_image"
+            android:contentDescription="@string/pause_description"
+            style="@style/GamePauseImage" />
+        <ImageView
+            android:id="@+id/game_tapThat_image"
+            android:contentDescription="@string/tapThat_description"
+            style="@style/GametapThatImage" />
+        <TextView
+            android:id="@+id/game_score"
+            style="@style/GametapThatCount" />
+    </RelativeLayout>
+
+    <!-- When the game starts the currently invisible GameBoard 
+        is made visible and the placeholder background is hidden. -->
+    <com.akpalu.TapThat.game.loops.GraphicsLoop
+        android:id="@+id/canvas"
+        android:contentDescription="@string/game_description"
+        style="@style/GameBoard"
+        android:visibility="gone" />
+
+    <ImageView
+		android:id="@+id/game_background_placeholder"
+		android:contentDescription="@string/placeholder_description"
+		style="@style/GameBoard"
+		android:src="@drawable/background"
+		android:scaleType="fitXY" />
+</LinearLayout>
